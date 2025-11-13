@@ -1,0 +1,17 @@
+# Create a list data type with add/remove items
+numbers = [10, 20, 30, 40, 60]
+print(numbers)
+print(type(numbers)) # type() means it shows the variable tye wether its string,number and so on
+
+#the result
+[10, 20, 30, 40, 60]
+<class 'list'>
+
+# lets add and remove from the list
+numbers = [10, 20, 30, 40, 60, 81]
+numbers.append(50) #append will add this value in list
+numbers.remove(81) #remove will delete this value in the list
+
+#the result
+[10, 20, 30, 40, 60, 50]
+
