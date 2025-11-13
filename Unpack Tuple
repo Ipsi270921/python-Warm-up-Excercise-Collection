@@ -1,0 +1,141 @@
+#Unpacking the Tuple
+####### Tuple unpacking means assigning values from a tuple (or any iterable) directly to multiple variables in one line. ######
+
+person = ("Bharat", 38, "India")
+name, age, country = person
+print(name)
+print(age)
+print(country)
+
+# Result
+Bharat
+38
+India
+
+
+###### Explation #####
+
+#On the right side: (“Bharat”, 38, “India”) → a tuple with 3 values
+
+#On the left side: name, age, country → 3 variables
+
+#Python automatically assigns:
+
+#name = "Bharat"
+
+#age = 38
+
+#country = "India"
+
+#That’s tuple unpacking — Python “unpacks” the values into separate variables.
+
+
+###### Rules of Tuple Unpacking #####
+
+#1. Equal count (Number of variables must match number of elements) (for example: (a, b, c) = (1, 2, 3))
+#2. Too few or too many (Raises ValueError) (for example: (a, b) = (1, 2, 3))
+#3. Works with any iterable...
+  #First, what is an Iterable?
+    #An iterable is anything you can use in a for loop.
+# for an example
+#for i in [1, 2, 3]:
+    #print(i)
+#[1, 2, 3] is iterable because you can go through each element.
+
+#In Python, tuple unpacking is not limited only to tuples.
+#It works with any iterable object — that is, any object you can loop over, such as:
+✅ Lists
+
+✅ Strings
+
+✅ Sets
+
+✅ Dictionaries
+
+✅ Generator objects
+
+✅ Ranges
+
+#Even though we call it tuple unpacking, the left-hand side doesn’t have to be a tuple, and the right-hand side doesn’t have to be a tuple either — it just needs to be iterable.
+
+### Unpacking from a List ###
+
+numbers=[1, 2, 3]
+a, b, c =numbers
+print(a, b, c)
+
+## Result
+1 2 3
+
+
+### Unpacking from String ###
+word= "cat"
+a, b, c= word
+print(a, b, c)
+
+##Result
+c a t
+
+### Unpacking from a Range ###
+a, b, c, d = range(4)
+print(a, b, c, d)
+
+##Result
+0 1 2 3 #range starts with 0 so it displays 0 1 2 3 total 4 
+#range(4) returns a sequence → iterable, so unpacking works.
+
+
+
+##### Unpacking from a Dictionary (Keys by Default) #####
+person = {"name": "krish", "age": 20, "occupation": "Data Engineer"}
+a, b, c= person
+print(a, b, c)
+
+## Result
+name age occupation
+
+
+
+### if want values ###
+person = {"name": "krish", "age": 20, "occupation": "Data Engineer"}
+a, b, c= person.values()
+print(a, b, c)
+
+## Result
+krish 20 Data Engineer
+
+
+
+### want key-value pairs ###
+
+person = {"name": "krish", "age": 20, "occupation": "Data Engineer"}
+
+for key, value in person.items():
+    print(key, "=>", value)
+
+## Result
+
+name => krish
+age => 20
+occupation => Data Engineer
+
+#### Unpacking from a Set ####
+
+my_set={2, 3, 4}
+a, b, c = my_set
+
+print(a, b, c)
+
+## Result
+2 3 4
+
+#Works — but order is not guaranteed, since sets are unordered.
+
+
+
+
+
+
+
+
+
