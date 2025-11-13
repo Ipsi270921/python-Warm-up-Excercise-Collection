@@ -1,0 +1,60 @@
+
+################### Set vs Frozenset Data Type #################
+''' 
+What is a set?
+A set is:
+
+1. unordered
+
+2. mutable (changeable)
+
+3. contains unique elements
+'''
+
+#Example of a normal Set
+fruits= {"Banana", "Apple", "Orange"}
+print(fruits)
+
+print(type(fruits))
+
+## Result
+{'Banana', 'Apple', 'Orange'}
+<class 'set'>
+
+#Example of a add and remove Set
+
+fruits= {"Banana", "Apple", "Orange"}
+fruits.add("Mango")
+fruits.remove("Banana")
+print(fruits)
+
+print(type(fruits))
+
+##Result
+{'Orange', 'Apple', 'Mango'}
+<class 'set'>
+
+
+#################### Frozenset ######################
+#A frozenset is like a set — but immutable (cannot be changed).
+fruits = frozenset(["Banana", "Mango", "Apple"])
+print(fruits)
+print(type(fruits))
+
+## Result
+frozenset({'Banana', 'Apple', 'Mango'})
+<class 'frozenset'>
+
+
+
+| Feature             | `set`           | `frozenset`           |
+| ------------------- | --------------- | --------------------- |
+| Mutability          | ✅ Mutable       | ❌ Immutable           |
+| Syntax              | `{}` or `set()` | `frozenset({})`         |
+| Add/Remove elements | ✅ Yes           | ❌ No                  |
+| Hashable            | ❌ No            | ✅ Yes                 |
+| Can be dict key     | ❌ No            | ✅ Yes                 |
+| Used for            | Dynamic data    | Fixed, read-only data |
+
+
+
