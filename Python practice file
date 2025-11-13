@@ -1,0 +1,118 @@
+# ==========================================================
+# 📘 Python Data Types for Data Engineering
+# Description: A complete hands-on practice file covering
+# all essential Python data types used in Data Engineering
+# ==========================================================
+
+# 1️⃣ Integer
+print("\n--- Integer ---")
+record_count = 1200
+batch_id = 5
+print(record_count, type(record_count))
+print(batch_id, type(batch_id))
+
+# Exercise:
+# 👉 Create two integers 'x' and 'y' and print their sum
+
+
+# 2️⃣ Float
+print("\n--- Float ---")
+avg_salary = 65234.45
+cpu_usage = 89.56
+print(avg_salary, type(avg_salary))
+
+# Exercise:
+# 👉 Create a float for temperature and convert it to integer using int()
+
+
+# 3️⃣ String
+print("\n--- String ---")
+file_name = "data_2025.csv"
+employee_name = "Bharat"
+print(file_name, type(file_name))
+
+# Exercise:
+# 👉 Concatenate two strings: "Data" and "Pipeline"
+
+
+# 4️⃣ Boolean
+print("\n--- Boolean ---")
+is_valid = True
+is_duplicate = False
+print(is_valid, type(is_valid))
+
+# Exercise:
+# 👉 Check if 10 > 5 and print the boolean result
+
+
+# 5️⃣ List
+print("\n--- List ---")
+columns = ["id", "name", "salary"]
+values = [1, "Bharat", 50000]
+print(columns, type(columns))
+
+# Exercise:
+# 👉 Append one more column 'department' to the list
+
+
+# 6️⃣ Tuple
+print("\n--- Tuple ---")
+connection_info = ("localhost", 5432, "postgres")
+print(connection_info, type(connection_info))
+
+# Exercise:
+# 👉 Try to change the first element — observe what happens
+
+
+# 7️⃣ Dictionary
+print("\n--- Dictionary ---")
+record = {"id": 101, "name": "Bharat", "salary": 75000}
+print(record, type(record))
+print(record["name"])  # Access by key
+
+# Exercise:
+# 👉 Add a new key 'department' with value 'Data Engineering'
+
+
+# 8️⃣ Set
+print("\n--- Set ---")
+unique_ids = {101, 102, 103, 101}
+print(unique_ids, type(unique_ids))
+
+# Exercise:
+# 👉 Add a new ID to the set and print it
+
+
+# 9️⃣ NoneType
+print("\n--- NoneType ---")
+data = None
+print(data, type(data))
+
+# Exercise:
+# 👉 Write an if condition to check if data is None
+
+
+# 🔟 Bytes
+print("\n--- Bytes ---")
+binary_data = b"DataPipeline"
+print(binary_data, type(binary_data))
+
+# Exercise:
+# 👉 Convert a string "ETL" to bytes using encode()
+
+
+# 1️⃣1️⃣ Datetime
+print("\n--- Datetime ---")
+from datetime import datetime
+timestamp = datetime.now()
+print(timestamp, type(timestamp))
+
+# Exercise:
+# 👉 Extract and print only the year and month from timestamp
+
+
+# ==========================================================
+# 🧩 Summary:
+# int, float, str, bool, list, tuple, dict, set, NoneType, bytes, datetime
+# These are essential for ETL, transformations, API data, and scheduling.
+# ==========================================================
