@@ -43,15 +43,15 @@ print(sentence)
 # ------------------------
 # 6. f-String Formatting
 # ------------------------
-user = "Isu"
-age = 38
+user = "Krish"
+age = 22
 print(f"My name is {user} and I am {age} years old.")
 
 
 # ------------------------
 # 7. Checking Strings
 # ------------------------
-title = "IBM Data Engineer"
-print(title.startswith("IBM"))
+title = "Google Data Engineer"
+print(title.startswith("Google"))
 print(title.endswith("Engineer"))
 print("Data" in title)
