@@ -1,0 +1,57 @@
+# ------------------------
+# 1. Basic String Creation
+# ------------------------
+name = "Data Engineering"
+print(name)
+
+
+# ------------------------
+# 2. Indexing
+# ------------------------
+print(name[0]) # D
+print(name[-1]) # g
+
+
+# ------------------------
+# 3. Slicing
+# ------------------------
+print(name[0:4]) # Data
+print(name[5:]) # Engineering
+
+
+# ------------------------
+# 4. String Methods
+# ------------------------
+text = " python is powerful "
+
+
+print(text.upper())
+print(text.lower())
+print(text.strip()) # remove whitespace
+print(text.replace("python", "SQL"))
+print(text.split())
+
+
+# ------------------------
+# 5. Join Text
+# ------------------------
+words = ['Python', 'is', 'fun']
+sentence = " ".join(words)
+print(sentence)
+
+
+# ------------------------
+# 6. f-String Formatting
+# ------------------------
+user = "Isu"
+age = 38
+print(f"My name is {user} and I am {age} years old.")
+
+
+# ------------------------
+# 7. Checking Strings
+# ------------------------
+title = "IBM Data Engineer"
+print(title.startswith("IBM"))
+print(title.endswith("Engineer"))
+print("Data" in title)
